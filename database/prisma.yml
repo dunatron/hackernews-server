@@ -6,7 +6,7 @@ endpoint: https://us1.prisma.sh/heath-dunlop-37e897/hacker-server-db/dev
 datamodel: datamodel.graphql
 
 # You can only access the API when providing JWTs that are signed with this secret
-secret: mysecret123
+secret: GraphQL-is-aw3some
 
 # Deploy hook
 hooks:
