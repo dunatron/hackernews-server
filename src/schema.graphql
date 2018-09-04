@@ -1,3 +1,4 @@
+# Ok look into this. Might need to upgrade to bleeding/latest/next haha sort it out javascript
 type Query {
   info: String!
   feed: [Link!]!
