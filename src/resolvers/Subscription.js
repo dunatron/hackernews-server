@@ -5,10 +5,6 @@ function newLinkSubscribe(parent, args, context, info) {
   )
 }
 
-const newLink = {
-  subscribe: newLinkSubscribe,
-}
-
 function newVoteSubscribe(parent, args, context, info) {
   return context.db.subscription.vote(
     { where: { mutation_in: ["CREATED"] } },
@@ -18,6 +14,10 @@ function newVoteSubscribe(parent, args, context, info) {
 
 const newVote = {
   subscribe: newVoteSubscribe,
+}
+
+const newLink = {
+  subscribe: newLinkSubscribe,
 }
 
 module.exports = {
